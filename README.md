@@ -380,11 +380,6 @@ page = page number
 size = records per page
 
 9. Swagger
-
-Start the application and open:
-
-http://localhost:8080/swagger-ui.html
-
 Swagger provides an interactive API testing interface.
 
 10. Testing
