@@ -454,83 +454,19 @@ Run with Maven:
 mvn spring-boot:run
 
 Run JAR:
-
 java -jar target/productsApi-*.jar
-
 Application URL:
-
 http://localhost:8080
-
 13. Docker
-
 Build the application:
-
 mvn clean package -DskipTests
-
 Start Docker:
-
 docker compose up --build
-
 Stop Docker:
-
 docker compose down
-
 Remove containers and database volume:
-
 docker compose down -v
-
-14. Git and GitHub
-
-Initialize Git:
-
-git init
-
-Add files:
-
-git add .
-
-Commit:
-
-git commit -m "Initial commit"
-
-Set main branch:
-
-git branch -M main
-
-Add remote:
-
-git remote add origin https://github.com/hiteshkalaL123/ProductsApiAssessment.git
-
-Verify:
-
-git remote -v
-
-Push:
-
-git push -u origin main
-
-For future changes:
-
-git add .
-git commit -m "Updated Product API"
-git push
-
-15. .gitignore
-
-Recommended .gitignore:
-
-target/
-.classpath
-.project
-.settings/
-.vscode/
-.idea/
-*.iml
-
-src/main/resources/application.properties
-
-Never commit:
-
+never commit
 Database passwords
 JWT secrets
 API keys
