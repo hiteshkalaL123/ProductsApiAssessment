@@ -4,7 +4,7 @@ services:
     image: mysql:8.0
     container_name: products-mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Hitesh123
+      MYSQL_ROOT_PASSWORD: secretkey
       MYSQL_DATABASE: productsdb
     ports:
       - "3306:3306"
@@ -19,8 +19,8 @@ services:
       - "8080:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/productsdb?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Kolkata
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Hitesh123
+      SPRING_DATASOURCE_USERNAME: secretdb
+      SPRING_DATASOURCE_PASSWORD: secretkey
     depends_on:
       - mysql
     restart: unless-stopped
